@@ -31,7 +31,7 @@ class Form extends Component {
         <MethodButton clickMethod={this.handleButtonClick} text={'POST'} />
         <MethodButton clickMethod={this.handleButtonClick} text={'PUT'} />
         <MethodButton clickMethod={this.handleButtonClick} text={'DELETE'} />
-        <RenderMethod />
+        <RenderMethod method={this.state.method} text={this.state.text} />
       </div>
     );
   }
