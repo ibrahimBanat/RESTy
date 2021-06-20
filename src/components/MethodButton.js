@@ -6,6 +6,13 @@ export default class MethodButton extends Component {
     this.props.clickMethod(text);
   };
   render() {
-    return <button onClick={el => this.methodText()}>{this.props.text}</button>;
+    return (
+      <button
+        style={{ display: this.props.shown }}
+        onClick={el => this.methodText()}
+      >
+        {this.props.text}
+      </button>
+    );
   }
 }
